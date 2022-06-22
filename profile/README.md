@@ -48,7 +48,7 @@
     </style>
     <foreignObject width="900px" height="260px">
         <div class="container">
-            <img src="./profile/img/logo_white.svg" />
+            <img src="./img/logo_white.svg" />
             <div class="border"></div>
             <h1 class="title">AN ENGINE TO DECARBONIZE THE PLANET</h1>
             <div class="gradient-border">
