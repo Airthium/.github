@@ -1,4 +1,4 @@
-<svg width="900px" height="300px">
+<svg width="900px" height="300px" xmlns="http://www.w3.org/2000/svg">
     <style>
     .container {
         width: 100%;
@@ -47,7 +47,7 @@
     }
     </style>
     <foreignObject width="900px" height="260px">
-        <div class="container">
+        <div class="container" xmlns="http://www.w3.org/1999/xhtml">
             <img src="./img/logo_white.svg" />
             <div class="border"></div>
             <h1 class="title">AN ENGINE TO DECARBONIZE THE PLANET</h1>
