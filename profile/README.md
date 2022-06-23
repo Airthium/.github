@@ -1,5 +1,5 @@
 <div style="position: relative; display:flex;">
-    <img src="./profile/README.png" alt="Airthium" width="100%"/>
+    <img src="https://github.com/Airthium/.github/blob/main/profile/README.png" alt="Airthium" width="100%"/>
     <div style="
         position: absolute;
         bottom: 50px;
