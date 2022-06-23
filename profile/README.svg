@@ -17,10 +17,23 @@
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="README.svg"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96">
+   inkscape:export-filename="/home/simon/Documents/Git/Airthium/.github/profile/README.png"
+   inkscape:export-xdpi="97.476944"
+   inkscape:export-ydpi="97.476944">
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient984">
+      <stop
+         style="stop-color:#0091f2;stop-opacity:1"
+         offset="0"
+         id="stop980" />
+      <stop
+         style="stop-color:#00b9f3;stop-opacity:1"
+         offset="1"
+         id="stop982" />
+    </linearGradient>
     <linearGradient
        id="linearGradient930"
        inkscape:collect="always">
@@ -122,6 +135,51 @@
        x2="99.029762"
        y2="240.15329"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient984"
+       id="linearGradient986"
+       x1="146.73041"
+       y1="257.3125"
+       x2="221.56969"
+       y2="257.3125"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient984"
+       id="linearGradient1006"
+       x1="578.84515"
+       y1="158.57858"
+       x2="790.8446"
+       y2="158.57858"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient984"
+       id="linearGradient1008"
+       gradientUnits="userSpaceOnUse"
+       x1="578.84515"
+       y1="158.57858"
+       x2="790.8446"
+       y2="158.57858" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient984"
+       id="linearGradient1010"
+       gradientUnits="userSpaceOnUse"
+       x1="578.84515"
+       y1="158.57858"
+       x2="790.8446"
+       y2="158.57858" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient984"
+       id="linearGradient1012"
+       gradientUnits="userSpaceOnUse"
+       x1="578.84515"
+       y1="158.57858"
+       x2="790.8446"
+       y2="158.57858" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -130,18 +188,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="186.46448"
-     inkscape:cy="90.4168"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="415.96184"
+     inkscape:cy="-19.779331"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="864"
-     inkscape:window-height="402"
-     inkscape:window-x="38"
-     inkscape:window-y="38"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -150,7 +209,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -223,5 +282,33 @@
        height="3.3243732"
        x="5.3001332"
        y="238.4911" />
-  </g>
+    <rect
+       style="opacity:1;fill:url(#linearGradient986);fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       id="rect978"
+       width="74.839287"
+       height="20.032738"
+       x="146.73041"
+       y="247.29613" />
+    <rect
+       style="opacity:1;fill:#1c1c1c;fill-opacity:1;stroke:none;stroke-width:0.50119883;stroke-opacity:1"
+       id="rect990"
+       width="72.496429"
+       height="17.671515"
+       x="147.90184"
+       y="248.47675" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot992"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient1006);fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,1.374581,215.33938)"><flowRegion
+         id="flowRegion994"
+         style="fill:url(#linearGradient1010);fill-opacity:1"><rect
+           id="rect996"
+           width="263.1431"
+           height="52.142784"
+           x="574.28571"
+           y="135.71431"
+           style="fill:url(#linearGradient1008);fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara998"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:url(#linearGradient1012);fill-opacity:1">Invest now</flowPara></flowRoot>  </g>
 </svg>
