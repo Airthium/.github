@@ -1,64 +1,225 @@
-<svg width="900px" height="300px" xmlns="http://www.w3.org/2000/svg">
-    <style>
-    .container {
-        padding: 20px;
-        width: 100%;
-        height: 100%;
-        background-color: #1c1c1c;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .border {
-        width: 100%;
-        height: 10px;
-        background: linear-gradient(90deg, #0091F2 0%, #00B9F3 19.79%, #FFFFFF 48.96%, #FF9D2C 73.96%, #FF6922 100%);
-        display: flex;
-        alignItems: center;
-        justifyContent: center;
-    }
-    .title {
-        background: linear-gradient(90deg, #ff9d2c 0%, #ff6922 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
-    }
-    .gradient-border {
-        background: linear-gradient(90deg, #0091f2 0%, #00b9f3 100%);
-        padding: 3px;
-    }
-    .gradient-background {
-        background: #1c1c1c;
-    }
-    .gradient-button {
-        padding: 10px 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        font-weight: 700;
-        line-height: 20px;
-        background: linear-gradient(90deg, #0091f2 0%, #00b9f3 100%);
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
-    }
-    </style>
-    <foreignObject width="900px" height="260px">
-        <div class="container" xmlns="http://www.w3.org/1999/xhtml">
-            <div>
-                <img src="https://raw.githubusercontent.com/Airthium/.github/dev/profile/img/logo_white.svg" height="45px"/>
-                <div class="border"></div>
-            </div>
-            <h1 class="title">AN ENGINE TO DECARBONIZE THE PLANET</h1>
-            <div class="gradient-border">
-                <div class="gradient-background">
-                    <a class="gradient-button" href="https://wefunder.com/airthium" target="_blank">Invest now</a>
-                </div>
-            </div>
-        </div>
-    </foreignObject>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="900"
+   height="300"
+   viewBox="0 0 238.12501 79.374999"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="README.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient930"
+       inkscape:collect="always">
+      <stop
+         id="stop926"
+         offset="0"
+         style="stop-color:#0091f2;stop-opacity:1" />
+      <stop
+         style="stop-color:#00b9f3;stop-opacity:1"
+         offset="0.19750816"
+         id="stop936" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0.49793854"
+         id="stop932" />
+      <stop
+         id="stop938"
+         offset="0.73787957"
+         style="stop-color:#ff9d2c;stop-opacity:1" />
+      <stop
+         id="stop928"
+         offset="1"
+         style="stop-color:#ff6922;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient852">
+      <stop
+         style="stop-color:#ff9d2c;stop-opacity:1"
+         offset="0"
+         id="stop848" />
+      <stop
+         style="stop-color:#ff6922;stop-opacity:1"
+         offset="1"
+         id="stop850" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient852"
+       id="linearGradient854"
+       x1="424.42368"
+       y1="356.58209"
+       x2="735.70325"
+       y2="356.58209"
+       gradientUnits="userSpaceOnUse" />
+    <style
+       id="style201">.cls-1{font-size:56px;fill:#fff;font-family:ConthraxSb-Regular, Conthrax;}</style>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient852"
+       id="linearGradient881"
+       gradientUnits="userSpaceOnUse"
+       x1="424.42368"
+       y1="356.58209"
+       x2="735.70325"
+       y2="356.58209" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient852"
+       id="linearGradient883"
+       gradientUnits="userSpaceOnUse"
+       x1="424.42368"
+       y1="356.58209"
+       x2="735.70325"
+       y2="356.58209" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient852"
+       id="linearGradient891"
+       gradientUnits="userSpaceOnUse"
+       x1="424.42368"
+       y1="356.58209"
+       x2="735.70325"
+       y2="356.58209" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient852"
+       id="linearGradient893"
+       gradientUnits="userSpaceOnUse"
+       x1="424.42368"
+       y1="356.58209"
+       x2="735.70325"
+       y2="356.58209" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient852"
+       id="linearGradient895"
+       gradientUnits="userSpaceOnUse"
+       x1="424.42368"
+       y1="356.58209"
+       x2="735.70325"
+       y2="356.58209" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient930"
+       id="linearGradient924"
+       x1="5.3001332"
+       y1="240.15329"
+       x2="99.029762"
+       y2="240.15329"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#1c1c1c"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="520.75019"
+     inkscape:cy="90.4168"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-217.625)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot815"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient854);fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-106.86618,167.20015)"><flowRegion
+         id="flowRegion817"
+         style="fill:url(#linearGradient883);fill-opacity:1"><rect
+           id="rect819"
+           width="2590.031"
+           height="456.58896"
+           x="424.26407"
+           y="333.81747"
+           style="fill:url(#linearGradient881);fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara821"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:url(#linearGradient891);fill-opacity:1">AN ENGINE TO</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:url(#linearGradient893);fill-opacity:1"
+         id="flowPara887">DECARBONIZE</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:url(#linearGradient895);fill-opacity:1"
+         id="flowPara889">THE PLANET</flowPara></flowRoot>    <g
+       style="font-size:56px;font-family:ConthraxSb-Regular, Conthrax;fill:#ffffff"
+       class="cls-1"
+       id="text207"
+       aria-label="AIRTHIUM"
+       transform="matrix(0.26458333,0,0,0.26458333,5.0778833,220.69417)">
+      <path
+         id="path271"
+         d="m 28.56,8.3999985 q 2.128,0 3.584,0.896 Q 33.6,10.135998 35,12.655998 l 18.536,33.656 q 0.28,0.56 0.112,0.952 -0.112,0.336 -0.784,0.336 h -7.112 q -0.952,0 -1.288,-0.728 l -3.976,-7.224 h -26.32 l -3.864,7.224 q -0.392,0.728 -1.288,0.728 h -7.28 q -0.728,0 -0.896,-0.336 -0.112,-0.392 0.168,-0.952 l 18.368,-33.656 q 1.4,-2.52 2.744,-3.3599995 1.344,-0.896 3.136,-0.896 z M 17.696,33.151998 H 36.96 l -8.904,-16.408 q -0.224,-0.392 -0.616,-0.392 h -0.336 q -0.392,0 -0.616,0.392 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path273"
+         d="m 65.631915,8.3999985 q 1.232,0 1.232,1.232 V 46.367998 q 0,1.232 -1.232,1.232 h -6.048 q -1.288,0 -1.288,-1.232 V 9.6319985 q 0,-1.232 1.288,-1.232 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path275"
+         d="m 106.06388,8.3999985 q 6.44,0 9.24,2.9119995 2.8,2.912 2.8,8.624 v 3.192 q 0,4.816 -1.96,7.616 -1.96,2.8 -6.384,3.584 l 9.576,11.872 q 0.28,0.28 0.168,0.84 -0.112,0.56 -0.896,0.56 h -7.224 q -0.728,0 -1.008,-0.168 -0.28,-0.168 -0.56,-0.56 l -8.848,-11.648 H 82.879875 v 11.144 q 0,1.232 -1.232,1.232 h -6.048 q -1.288,0 -1.288,-1.232 v -36.288 q 0,-1.6799995 1.68,-1.6799995 z M 82.879875,28.391998 h 21.448005 q 2.856,0 4.032,-1.232 1.176,-1.232 1.176,-3.752 v -2.352 q 0,-2.52 -1.176,-3.752 -1.176,-1.232 -4.032,-1.232 H 83.607875 q -0.728,0 -0.728,0.672 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path277"
+         d="m 166.93575,8.3999985 q 1.288,0 1.288,1.232 v 5.4879995 q 0,1.288 -1.288,1.288 h -17.584 v 29.96 q 0,1.232 -1.232,1.232 h -6.104 q -1.232,0 -1.232,-1.232 v -29.96 h -17.584 q -1.288,0 -1.288,-1.288 V 9.6319985 q 0,-1.232 1.288,-1.232 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path279"
+         d="m 180.5437,8.3999985 q 1.232,0 1.232,1.232 V 24.191998 h 26.208 V 9.6319985 q 0,-1.232 1.232,-1.232 h 6.048 q 1.288,0 1.288,1.232 V 46.367998 q 0,1.232 -1.288,1.232 h -6.048 q -1.232,0 -1.232,-1.232 v -14.896 h -26.208 v 14.896 q 0,1.232 -1.232,1.232 h -6.048 q -1.288,0 -1.288,-1.232 V 9.6319985 q 0,-1.232 1.288,-1.232 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path281"
+         d="m 231.2796,8.3999985 q 1.232,0 1.232,1.232 V 46.367998 q 0,1.232 -1.232,1.232 h -6.048 q -1.288,0 -1.288,-1.232 V 9.6319985 q 0,-1.232 1.288,-1.232 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path283"
+         d="m 247.18357,8.3999985 q 1.232,0 1.232,1.232 V 31.975998 q 0,2.24 0.336,3.752 0.392,1.456 1.232,2.352 0.84,0.84 2.24,1.232 1.456,0.336 3.64,0.336 h 15.512 q 2.184,0 3.584,-0.336 1.456,-0.392 2.296,-1.232 0.84,-0.896 1.176,-2.352 0.336,-1.512 0.336,-3.752 V 9.6319985 q 0,-1.232 1.232,-1.232 h 6.104 q 1.232,0 1.232,1.232 V 32.815998 q 0,4.032 -0.84,6.888 -0.84,2.8 -2.744,4.592 -1.848,1.736 -4.872,2.52 -2.968,0.784 -7.224,0.784 h -16.128 q -4.256,0 -7.224,-0.784 -2.968,-0.784 -4.872,-2.52 -1.848,-1.792 -2.744,-4.592 -0.84,-2.856 -0.84,-6.888 V 9.6319985 q 0,-1.232 1.288,-1.232 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path285"
+         d="m 305.75952,8.3999985 q 1.232,0 2.128,0.168 0.896,0.168 1.568,0.672 0.672,0.448 1.176,1.2879995 0.56,0.784 1.12,2.128 l 11.648,26.88 q 0.224,0.504 0.784,0.504 h 0.672 q 0.56,0 0.784,-0.504 l 11.648,-26.88 q 0.56,-1.344 1.064,-2.128 0.56,-0.8399995 1.232,-1.2879995 0.672,-0.504 1.512,-0.672 0.896,-0.168 2.128,-0.168 h 5.992 q 2.912,0 3.92,1.344 1.008,1.2879995 1.008,4.4799995 v 32.144 q 0,1.232 -1.288,1.232 h -5.712 q -1.232,0 -1.232,-1.232 v -29.232 q 0,-0.56 -0.448,-0.56 h -0.504 q -0.56,0 -0.728,0.448 l -11.312,25.088 q -0.672,1.512 -1.4,2.576 -0.672,1.008 -1.512,1.68 -0.784,0.672 -1.848,0.952 -1.008,0.28 -2.408,0.28 h -2.688 q -1.4,0 -2.464,-0.28 -1.008,-0.28 -1.848,-0.952 -0.784,-0.672 -1.512,-1.68 -0.672,-1.064 -1.344,-2.576 l -11.312,-25.088 q -0.168,-0.448 -0.728,-0.448 h -0.504 q -0.448,0 -0.448,0.56 v 29.232 q 0,1.232 -1.232,1.232 h -5.712 q -1.288,0 -1.288,-1.232 v -32.144 q 0,-3.192 1.008,-4.4799995 1.008,-1.344 3.976,-1.344 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       style="opacity:1;fill:url(#linearGradient924);fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       id="rect916"
+       width="93.72963"
+       height="3.3243732"
+       x="5.3001332"
+       y="238.4911" />
+  </g>
 </svg>
