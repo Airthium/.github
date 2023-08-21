@@ -1,0 +1,5 @@
+{
+  "name": "renovate-plus",
+  "type": "module",
+  "main": "index.js"
+}
