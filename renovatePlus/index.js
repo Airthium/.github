@@ -31,6 +31,20 @@ const tanatlocRepositories = [
 ]
 
 /**
+ * My myExecSync
+ * @param {string} command Command
+ */
+const myExecSync = (command) => {
+  try {
+    return execSync(command)
+  } catch (err) {
+    console.error('myExecSync error')
+    console.error(err.stderr.toString())
+    throw err
+  }
+}
+
+/**
  * Get version
  * @param {string} repository Repository
  */
@@ -56,7 +70,7 @@ const update = (repository, top, tanatloc) => {
   process.chdir('../' + repository)
 
   // Check Renovate PR
-  const res = execSync('gh pr list --app renovate')
+  const res = myExecSync('gh pr list --app renovate')
   const number = parseInt(res)
   if (isNaN(number)) {
     console.warn('No PR to merge -> continue')
@@ -69,30 +83,35 @@ const update = (repository, top, tanatloc) => {
 
   // Merge PR
   console.info('Merge PR', number)
-  execSync('gh pr merge ' + number + ' --squash')
+  myExecSync('gh pr merge ' + number + ' --squash')
 
   // Check nested top level dependencies
   if (tanatloc) {
     try {
       packageUpdate(repository)
     } catch (err) {
+      console.error('package update failed')
       console.error(err)
+      throw err
     }
   } else if (top) {
     try {
       preUpdate()
     } catch (err) {
+      console.error('preUpdate failed')
       console.error(err)
+      throw err
     }
   }
 
   // Run hotfix script
   console.info('Run hotfix script...')
   try {
-    execSync('./.github/hotfix.sh release')
+    myExecSync('./.github/hotfix.sh release')
   } catch (err) {
     console.error('Hotfix script failed')
     console.error(err)
+    throw err
   }
 
   // New version
@@ -105,6 +124,8 @@ const update = (repository, top, tanatloc) => {
  * @param {?string} repository Repository
  */
 const packageUpdate = (repository) => {
+  myExecSync('git pull')
+
   let isUpdated = false
 
   const packageJSONName =
@@ -141,9 +162,9 @@ const packageUpdate = (repository) => {
   if (isUpdated) {
     writeFileSync(packageJSONName, JSON.stringify(packageJSON, null, '  '))
 
-    execSync('git add .')
-    execSync('git commit -m"@airthium dependencies" --allow-empty')
-    execSync('git push')
+    myExecSync('git add .')
+    myExecSync('git commit -m"@airthium dependencies" --allow-empty')
+    myExecSync('git push')
   }
 }
 
@@ -152,14 +173,13 @@ const packageUpdate = (repository) => {
  */
 const preUpdate = () => {
   // Go to hotfix branch
-  execSync('git checkout hotfix')
-  execSync('git pull')
+  myExecSync('git checkout hotfix')
 
   // Update
   packageUpdate()
 
   // Go to dev
-  execSync('git checkout dev')
+  myExecSync('git checkout dev')
 }
 
 /**
