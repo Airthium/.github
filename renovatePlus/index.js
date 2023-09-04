@@ -164,7 +164,6 @@ const packageUpdate = (repository) => {
 
     myExecSync('git add .')
     myExecSync('git commit -m"@airthium dependencies" --allow-empty')
-    myExecSync('git push')
   }
 }
 
@@ -215,8 +214,14 @@ updateSinglRepositories()
 updateFirstLevelRepositories()
 
 if (needWait) {
-  console.info('Wait for NPM publish (2 minutes)')
-  await new Promise((resolve) => setTimeout(resolve, 120_000))
+  console.info('')
+  console.info('*** Wait for NPM publish (2 minutes)... ***')
+  console.info('')
+  await new Promise((resolve) => setTimeout(resolve, 60_000))
+  console.info('')
+  console.info('*** Wait for NPM publish (1 minutes) ***')
+  console.info('')
+  await new Promise((resolve) => setTimeout(resolve, 60_000))
 }
 
 updateTopLevelRepositories()
