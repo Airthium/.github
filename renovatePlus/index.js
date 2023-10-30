@@ -15,7 +15,8 @@ const firstLevelRepositories = [
   'pg-native',
   'tanatloc-formula-validator',
   'tanatloc-template-parser',
-  'typedoc-plugin-airthium'
+  'typedoc-plugin-airthium',
+  'tanatloc-3d'
 ]
 
 const topLevelRepositories = [
