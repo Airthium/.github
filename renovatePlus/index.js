@@ -65,7 +65,7 @@ const getVersion = (repository) => {
  * @param {?boolean} tanatloc Tanatloc repository
  */
 const update = (repository, top, tanatloc) => {
-  console.info('Update repository:', repository)
+  console.info(' *** Update repository:', repository)
 
   // Go to Repository
   process.chdir('../' + repository)
@@ -74,7 +74,7 @@ const update = (repository, top, tanatloc) => {
   const res = myExecSync('gh pr list --app renovate')
   const number = parseInt(res)
   if (isNaN(number)) {
-    console.warn('No PR to merge -> continue')
+    console.warn(' **** No PR to merge -> continue')
 
     // Version
     getVersion(repository)
@@ -83,15 +83,15 @@ const update = (repository, top, tanatloc) => {
   }
 
   // Merge PR
-  console.info('Merge PR', number)
-  myExecSync('gh pr merge ' + number + ' --squash')
+  console.info(' **** Merge PR', number)
+  myExecSync('gh pr merge ' + number + ' --squash --delete-branch')
 
   // Check nested top level dependencies
   if (tanatloc) {
     try {
       packageUpdate(repository)
     } catch (err) {
-      console.error('package update failed')
+      console.error(' ***** package update failed')
       console.error(err)
       throw err
     }
@@ -99,18 +99,18 @@ const update = (repository, top, tanatloc) => {
     try {
       preUpdate()
     } catch (err) {
-      console.error('preUpdate failed')
+      console.error(' ***** preUpdate failed')
       console.error(err)
       throw err
     }
   }
 
   // Run hotfix script
-  console.info('Run hotfix script...')
+  console.info(' **** Run hotfix script...')
   try {
     myExecSync('./.github/hotfix.sh release')
   } catch (err) {
-    console.error('Hotfix script failed')
+    console.error(' ***** Hotfix script failed')
     console.error(err)
     throw err
   }
