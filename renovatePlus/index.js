@@ -56,6 +56,7 @@ const getVersion = (repository) => {
   const packageJSON = JSON.parse(content)
 
   newVersions[repository] = packageJSON.version
+  console.info('    -> Version ' + packageJSON.version)
 }
 
 /**
@@ -154,8 +155,8 @@ const packageUpdate = (repository) => {
       const newPackage = key.replace('@airthium/', '')
       const newVersion = newVersions[newPackage]
       if (parseInt(packageJSON.devDependencies[key]) !== parseInt(newVersion))
-        packageJSON.devDependencies[key] = newVersion
-      isUpdated = true
+        isUpdated = true
+      packageJSON.devDependencies[key] = newVersion
     }
   })
 
