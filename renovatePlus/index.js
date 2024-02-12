@@ -66,6 +66,7 @@ const getVersion = (repository) => {
  * @param {?boolean} tanatloc Tanatloc repository
  */
 const update = (repository, top, tanatloc) => {
+  let isUpdated = false
   console.info(' *** Update repository:', repository)
 
   // Go to Repository
@@ -80,17 +81,19 @@ const update = (repository, top, tanatloc) => {
     // Version
     getVersion(repository)
 
-    return
+    if (!top && !tanatloc) return
+  } else {
+    // Merge PR
+    console.info(' **** Merge PR', number)
+    myExecSync('gh pr merge ' + number + ' --squash --delete-branch')
+    isUpdated = true
   }
-
-  // Merge PR
-  console.info(' **** Merge PR', number)
-  myExecSync('gh pr merge ' + number + ' --squash --delete-branch')
 
   // Check nested top level dependencies
   if (tanatloc) {
+    console.info('Update @airthium dependencies')
     try {
-      packageUpdate(repository)
+      isUpdated = packageUpdate(repository)
     } catch (err) {
       console.error(' ***** package update failed')
       console.error(err)
@@ -98,7 +101,7 @@ const update = (repository, top, tanatloc) => {
     }
   } else if (top) {
     try {
-      preUpdate()
+      isUpdated = preUpdate()
     } catch (err) {
       console.error(' ***** preUpdate failed')
       console.error(err)
@@ -107,13 +110,14 @@ const update = (repository, top, tanatloc) => {
   }
 
   // Run hotfix script
-  console.info(' **** Run hotfix script...')
-  try {
-    myExecSync('./.github/hotfix.sh release')
-  } catch (err) {
-    console.error(' ***** Hotfix script failed')
-    console.error(err)
-    throw err
+  if (isUpdated) {
+    console.info(' **** Run hotfix script...')
+    try {
+      myExecSync('./.github/hotfix.sh release')
+    } catch (err) {
+      console.error(' ***** Hotfix script failed')
+      throw err
+    }
   }
 
   // New version
@@ -124,6 +128,7 @@ const update = (repository, top, tanatloc) => {
 /**
  * Package update
  * @param {?string} repository Repository
+ * @returns {boolean} Is updated
  */
 const packageUpdate = (repository) => {
   myExecSync('git pull')
@@ -144,9 +149,10 @@ const packageUpdate = (repository) => {
     if (key.includes('@airthium/')) {
       const newPackage = key.replace('@airthium/', '')
       const newVersion = newVersions[newPackage]
-      if (parseInt(packageJSON.dependencies[key]) !== parseInt(newVersion))
+      if (packageJSON.dependencies[key] !== newVersion) {
         isUpdated = true
-      packageJSON.dependencies[key] = newVersion
+        packageJSON.dependencies[key] = newVersion
+      }
     }
   })
 
@@ -154,9 +160,10 @@ const packageUpdate = (repository) => {
     if (key.includes('@airthium/')) {
       const newPackage = key.replace('@airthium/', '')
       const newVersion = newVersions[newPackage]
-      if (parseInt(packageJSON.devDependencies[key]) !== parseInt(newVersion))
+      if (packageJSON.devDependencies[key] !== newVersion) {
         isUpdated = true
-      packageJSON.devDependencies[key] = newVersion
+        packageJSON.devDependencies[key] = newVersion
+      }
     }
   })
 
@@ -167,20 +174,25 @@ const packageUpdate = (repository) => {
     myExecSync('git add .')
     myExecSync('git commit -m"@airthium dependencies" --allow-empty')
   }
+
+  return isUpdated
 }
 
 /**
  * Pre-update
+ * @returns {boolean} Is updated
  */
 const preUpdate = () => {
   // Go to hotfix branch
   myExecSync('git checkout hotfix')
 
   // Update
-  packageUpdate()
+  const isUpdated = packageUpdate()
 
   // Go to dev
   myExecSync('git checkout dev')
+
+  return isUpdated
 }
 
 /**
@@ -212,8 +224,16 @@ const updateTanatlocRepositories = () => {
 }
 
 process.chdir('..')
-updateSinglRepositories()
-updateFirstLevelRepositories()
+try {
+  updateSinglRepositories()
+} catch (err) {
+  process.exit(-1)
+}
+try {
+  updateFirstLevelRepositories()
+} catch (err) {
+  process.exit(-2)
+}
 
 if (needWait) {
   console.info('')
@@ -226,5 +246,13 @@ if (needWait) {
   await new Promise((resolve) => setTimeout(resolve, 60_000))
 }
 
-updateTopLevelRepositories()
-updateTanatlocRepositories()
+try {
+  updateTopLevelRepositories()
+} catch (err) {
+  process.exit(-3)
+}
+try {
+  updateTanatlocRepositories()
+} catch (err) {
+  process.exit(-4)
+}
