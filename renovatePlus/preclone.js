@@ -30,17 +30,32 @@ const myExecSync = (command) => {
   } catch (err) {
     console.error('myExecSync error')
     console.error(err.stderr.toString())
+    throw err
   }
 }
 
 const clone = (repository) => {
   try {
     myExecSync(
-      'git clone git@github.com:Airthium/' + repository + '.git -b dev'
+      'git clone --recurse-submodules git@github.com:Airthium/' +
+        repository +
+        '.git -b dev'
     )
-  } catch (err) {}
+  } catch (err) {
+    try {
+      myExecSync(
+        'git clone --recurse-submodules git@github.com:Airthium/' +
+          repository +
+          '.git'
+      )
+    } catch (err) {}
+  }
 
-  myExecSync('cd ' + repository + ' && git checkout dev && git pull && cd -')
+  try {
+    myExecSync('cd ' + repository + ' && git checkout dev && git pull && cd -')
+  } catch (err) {
+    myExecSync('cd ' + repository + ' && git pull && cd -')
+  }
 }
 
 const main = () => {
