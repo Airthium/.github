@@ -2,23 +2,23 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="900"
    height="300"
    viewBox="0 0 238.12501 79.374999"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="README.svg"
    inkscape:export-xdpi="200"
-   inkscape:export-ydpi="200">
+   inkscape:export-ydpi="200"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2">
     <linearGradient
@@ -137,42 +137,6 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient984"
-       id="linearGradient986"
-       x1="146.73041"
-       y1="257.3125"
-       x2="221.56969"
-       y2="257.3125"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient984"
-       id="linearGradient1006"
-       x1="578.84515"
-       y1="158.57858"
-       x2="790.8446"
-       y2="158.57858"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient984"
-       id="linearGradient1008"
-       gradientUnits="userSpaceOnUse"
-       x1="578.84515"
-       y1="158.57858"
-       x2="790.8446"
-       y2="158.57858" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient984"
-       id="linearGradient1010"
-       gradientUnits="userSpaceOnUse"
-       x1="578.84515"
-       y1="158.57858"
-       x2="790.8446"
-       y2="158.57858" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient984"
        id="linearGradient1012"
        gradientUnits="userSpaceOnUse"
        x1="578.84515"
@@ -188,18 +152,20 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="415.96184"
-     inkscape:cy="-19.779331"
+     inkscape:cx="403.05087"
+     inkscape:cy="-19.697975"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1920"
-     inkscape:window-height="1016"
-     inkscape:window-x="1920"
-     inkscape:window-y="27"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:pagecheckerboard="false" />
+     inkscape:pagecheckerboard="false"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#1c1c1c" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -208,7 +174,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -221,7 +187,7 @@
        xml:space="preserve"
        id="flowRoot815"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient854);fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-106.86618,167.20015)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,24.801027,167.20015)"><flowRegion
          id="flowRegion817"
          style="fill:url(#linearGradient883);fill-opacity:1"><rect
            id="rect819"
@@ -235,7 +201,8 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:url(#linearGradient893);fill-opacity:1"
          id="flowPara887">DECARBONIZE</flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:url(#linearGradient895);fill-opacity:1"
-         id="flowPara889">THE PLANET</flowPara></flowRoot>    <g
+         id="flowPara889">THE PLANET</flowPara></flowRoot>
+    <g
        style="font-size:56px;font-family:ConthraxSb-Regular, Conthrax;fill:#ffffff"
        class="cls-1"
        id="text207"
@@ -281,33 +248,5 @@
        height="3.3243732"
        x="5.3001332"
        y="238.4911" />
-    <rect
-       style="opacity:1;fill:url(#linearGradient986);fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
-       id="rect978"
-       width="74.839287"
-       height="20.032738"
-       x="146.73041"
-       y="247.29613" />
-    <rect
-       style="opacity:1;fill:#1c1c1c;fill-opacity:1;stroke:none;stroke-width:0.50119883;stroke-opacity:1"
-       id="rect990"
-       width="72.496429"
-       height="17.671515"
-       x="147.90184"
-       y="248.47675" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot992"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient1006);fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,1.374581,215.33938)"><flowRegion
-         id="flowRegion994"
-         style="fill:url(#linearGradient1010);fill-opacity:1"><rect
-           id="rect996"
-           width="263.1431"
-           height="52.142784"
-           x="574.28571"
-           y="135.71431"
-           style="fill:url(#linearGradient1008);fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara998"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:url(#linearGradient1012);fill-opacity:1">Invest now</flowPara></flowRoot>  </g>
+  </g>
 </svg>
