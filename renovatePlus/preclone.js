@@ -12,6 +12,7 @@ const repositories = [
   'tanatloc-template-parser',
   'typedoc-plugin-airthium',
   'tanatloc-3d',
+  'AirthiumFAM',
   'airthium.com',
   'airthium.com-calculator',
   'tanatloc',
